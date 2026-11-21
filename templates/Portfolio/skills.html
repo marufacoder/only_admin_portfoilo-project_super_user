@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Skills</h1><div class="row g-3">{% for s in skills %}<div class="col-md-6"><div class="card p-3"><b>{{ s.skill_name }} — {{ s.proficiency_level }}%</b><div class="progress"><div class="progress-bar" style="width:{{ s.proficiency_level }}%"></div></div></div></div>{% empty %}<p>No skills added.</p>{% endfor %}</div>{% endblock %}

@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Education</h1>{% for x in education_list %}<div class="card p-4 mb-3"><h4>{{ x.degree }}</h4><h6>{{ x.institute_name }}</h6><p>{{ x.passing_year }} · {{ x.result }}</p></div>{% empty %}<p>No education listed.</p>{% endfor %}{% endblock %}

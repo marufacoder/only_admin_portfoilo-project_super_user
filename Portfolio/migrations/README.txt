@@ -1,0 +1,1 @@
+Before the first migration run: python manage.py makemigrations Portfolio\nThen run: python manage.py migrate\n
